@@ -16,12 +16,12 @@
             {!! Form::open(['route' => 'project.store', 'method' => 'post', 'files' => true]) !!}
 
                 <div class="modal-body">
-    {{--                --}}
                         {!! Form::label('name', 'Name') !!}
                         {!! Form::text('name', '', ['class' => 'form-control']) !!}
 
                         {!! Form::label('thumbnail', 'Thumbnail') !!}
                         {!! Form::file('thumbnail', ['class'=>'form-control-file']) !!}
+                        @include('errors.__projectCreate')
                 </div>
                 <div class="modal-footer">
                     {!! Form::submit('Submit', ['class' => 'btn btn-primary']) !!}

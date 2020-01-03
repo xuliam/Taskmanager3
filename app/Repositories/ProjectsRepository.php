@@ -20,8 +20,8 @@ class ProjectsRepository
         if($request->hasFile('thumbnail')){
             $thumb = $request->thumbnail;
             $name = $thumb->hashName();
-            $thumb->storeAs('thumbs',$name);
-            
+            $thumb->storeAs('public/thumbs',$name);
+
             return $name;
         }
     }
