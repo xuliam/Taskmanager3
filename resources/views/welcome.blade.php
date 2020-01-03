@@ -10,4 +10,7 @@
         @include('projects._createModal')
 
     </div>
+
+    @include('projects._JS')
+
 @endsection

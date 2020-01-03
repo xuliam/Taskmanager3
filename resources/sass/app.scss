@@ -11,3 +11,30 @@
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+a {
+    color: black;
+}
+
+.card{
+    .icon-bar{
+        width: 100%;
+        background-color : #dff0d8;
+        opacity: 0.7;
+        list-style: none;
+        z-index: 100;
+        position:absolute;
+        top:0;
+
+        li {
+            float:right;
+            margin-right: .7em;
+
+            .fa-btn{
+                color:#d9534f;
+            }
+        }
+    }
+
+
+}
