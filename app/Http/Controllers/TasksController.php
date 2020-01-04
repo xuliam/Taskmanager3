@@ -87,4 +87,13 @@ class TasksController extends Controller
     {
         //
     }
+
+    public function check($id)
+    {
+        $task = Task::findOrFail($id);
+        $task->update([
+            'completion'=>1
+        ]);
+        return back();
+    }
 }
