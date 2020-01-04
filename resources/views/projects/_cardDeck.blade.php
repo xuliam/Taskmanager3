@@ -15,7 +15,7 @@
                 </button>
             </li>
         </ul>
-        <a href="projects/{{ $individual->id }}" >
+        <a href="{{route('project.show', $individual->id)}}" >
         <img src="{{ asset('storage/thumbs/'.$individual->thumbnail) }}" class="card-img-top" alt="">
         <div class="card-body">
             <h5 class="card-title text-center">{{$individual->name}}</h5>

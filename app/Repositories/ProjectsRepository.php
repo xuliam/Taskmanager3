@@ -48,4 +48,14 @@ class ProjectsRepository
         }
         $project->save();
     }
+
+    public function todos($individual)
+    {
+        return $individual->tasks()->where('completion', 0)->get();
+    }
+
+    public function dones($individual)
+    {
+        return $individual->tasks()->where('completion', 1)->get();
+    }
 }
