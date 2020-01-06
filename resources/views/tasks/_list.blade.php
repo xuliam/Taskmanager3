@@ -14,6 +14,8 @@
                     <tr>
                         <td>{{$todo->name}}</td>
                         <td>@include('tasks._check')</td>
+                        <td>@include('tasks._edit')</td>
+                        <td>@include('tasks._delete')</td>
                     </tr>
                 @endforeach
             </table>
