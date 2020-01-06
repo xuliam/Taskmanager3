@@ -23,7 +23,10 @@ class TasksController extends Controller
      */
     public function index()
     {
-        //
+        $todo = $this->repo->todos();
+        $done = $this->repo->dones();
+        //$tasks = request()->user()->tasks()->pluck('name', 'id');
+        return view('tasks._index', compact('todo', 'done'));
     }
 
     /**

@@ -37,4 +37,14 @@ class TasksRepository
     {
         Task::findOrFail($id)->delete();
     }
+
+    public function todos()
+    {
+        return auth()->user()->tasks()->where('completion', 0)->paginate(5);
+    }
+
+    public function dones()
+    {
+        return auth()->user()->tasks()->where('completion', 1)->paginate(5);
+    }
 }

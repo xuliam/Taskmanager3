@@ -34,7 +34,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <ul class="nav-item">
+                            <a class="nav-link" href="{{route('tasks.index')}}">All Tasks</a>
+                        </ul>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
