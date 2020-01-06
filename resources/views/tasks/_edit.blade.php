@@ -18,6 +18,7 @@
             <div class="modal-footer">
                 {!! Form::submit('Submit', ['class' => 'btn btn-primary']) !!}
             </div>
+            {!! $errors->edit->first('name','<div class="alert alert-danger">:message</div>') !!}}
             {!! Form::close() !!}
         </div>
     </div>

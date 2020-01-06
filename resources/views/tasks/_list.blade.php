@@ -1,9 +1,9 @@
 <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
-        <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo" role="tab" aria-controls="Todo" aria-selected="true">Home</a>
+        <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo" role="tab" aria-controls="Todo" aria-selected="true">To do</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="done-tab" data-toggle="tab" href="#done" role="tab" aria-controls="Done" aria-selected="false">Profile</a>
+        <a class="nav-link" id="done-tab" data-toggle="tab" href="#done" role="tab" aria-controls="Done" aria-selected="false">Done</a>
     </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -12,7 +12,7 @@
             <table class="table table-striped">
                 @foreach ($todos as $todo)
                     <tr>
-                        <td>{{$todo->name}}</td>
+                        <td class="col-9">{{$todo->name}}</td>
                         <td>@include('tasks._check')</td>
                         <td>@include('tasks._edit')</td>
                         <td>@include('tasks._delete')</td>

@@ -8,6 +8,7 @@
                 </div>
                 {!! Form::text('name', null, ['class' => 'form-control', 'placeholder'=>'Pls input your tasks...']) !!}
             </div>
+        {!! $errors->create->first('name','<div class="alert alert-danger">:message</div>') !!}
         {!! Form::close() !!}
 
         @include('tasks._list')
